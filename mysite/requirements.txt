@@ -1,2 +1,6 @@
 Django==1.6.6
-yolk==0.4.3
+argparse==1.2.1
+stevedore==0.15
+virtualenv==1.11.6
+virtualenv-clone==0.2.5
+virtualenvwrapper==4.3.1

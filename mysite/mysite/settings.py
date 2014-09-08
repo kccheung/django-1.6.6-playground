@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -21,6 +21,7 @@ SECRET_KEY = 'i!cc4t7v2qtyf)8u_2pw%ees-n2avijr#hmoqu!kzp1%ov(a)%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,7 +69,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Hong_Kong'
 
 USE_I18N = True
 
